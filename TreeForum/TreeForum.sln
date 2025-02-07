@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeForum", "TreeForum\TreeForum.csproj", "{C4B928D5-9670-4893-AC70-720C07E5B5E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeForum", "TreeForum\TreeForum.csproj", "{E8284B69-0A18-42EF-9483-538DB699B4D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C4B928D5-9670-4893-AC70-720C07E5B5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4B928D5-9670-4893-AC70-720C07E5B5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4B928D5-9670-4893-AC70-720C07E5B5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4B928D5-9670-4893-AC70-720C07E5B5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8284B69-0A18-42EF-9483-538DB699B4D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8284B69-0A18-42EF-9483-538DB699B4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8284B69-0A18-42EF-9483-538DB699B4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8284B69-0A18-42EF-9483-538DB699B4D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
