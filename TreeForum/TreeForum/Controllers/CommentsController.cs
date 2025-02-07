@@ -43,6 +43,8 @@ namespace TreeForum.Controllers
             {
                 _context.Add(comment);
                 await _context.SaveChangesAsync();
+
+                //must redirect back to discussion
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DiscussionId"] = new SelectList(_context.Discussion, "DiscussionId", "DiscussionId", comment.DiscussionId);
