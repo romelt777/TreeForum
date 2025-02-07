@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using TreeForum.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<TreeForumContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TreeForumContext") ?? throw new InvalidOperationException("Connection string 'TreeForumContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
