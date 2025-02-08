@@ -26,9 +26,17 @@ namespace TreeForum.Controllers
 
 
         // GET: Comments/Create
-        public IActionResult Create()
+        public IActionResult Create(int? id)
         {
-            ViewData["DiscussionId"] = new SelectList(_context.Discussion, "DiscussionId", "DiscussionId");
+            if(id == null)
+            {
+                return NotFound();
+            }
+
+            //setting discussion ID for the comment
+            ViewData["DiscussionId"] = id;
+            ViewData["CreateDate"] = DateTime.Now;
+
             return View();
         }
 
