@@ -22,7 +22,9 @@ namespace TreeForum.Controllers
         {
             //getting discussions from database, saving to list
             discussions = await _context.Discussion.ToListAsync();
-            return View(discussions);
+
+            //sorting list from new to old
+            return View(discussions.OrderByDescending(t => t.CreateDate).ToList());
         }
 
         //GetDiscussion : gets 1 discussion and all comments with discussion
@@ -37,16 +39,26 @@ namespace TreeForum.Controllers
 
             var discussion = await _context.Discussion.Include("Comments").FirstOrDefaultAsync(m => m.DiscussionId == id);
 
-            Console.WriteLine(discussion.DiscussionId);
 
             if (discussion == null)
             {
                 return NotFound();
             }
 
-            return View(discussion);
 
-            //return View()
+            if (discussion.Comments != null)
+            {
+                discussion.Comments = discussion.Comments.OrderByDescending(c => c.CreateDate).ToList();
+                return View(discussion);
+            }
+            else
+            {
+                return View(discussion);
+            }
+
+
+
+
         }
     }
 }

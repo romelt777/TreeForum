@@ -62,6 +62,7 @@ C:\Users\Rom\Documents\NSCC\WINTER2025\INFT4000_ASPNET\TreeForum\TreeForum\TreeF
 C:\Users\Rom\Documents\NSCC\WINTER2025\INFT4000_ASPNET\TreeForum\TreeForum\TreeForum\wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\177e8a3b-93ef-4dc2-b219-c03b7cd69892.png
 wwwroot\images\3c30d542-9a5e-4aa9-af40-df6faaad82d4.jpg
 wwwroot\images\a1ca2311-99c0-4543-848d-fecbe8a6ef73.jpg
 wwwroot\images\e842f62a-0b0a-4925-9309-799f66dc5b79.jpg
