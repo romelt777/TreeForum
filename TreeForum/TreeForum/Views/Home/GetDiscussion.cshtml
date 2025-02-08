@@ -29,6 +29,8 @@
 
         </div>
     </div>
+    <h2 class="mt-5">Comments</h2>
+
     <div class="mb-3">
         @if (Model.Comments != null)
         {
@@ -38,14 +40,18 @@
             }
         }
     </div>
-    <h2 class="mt-5">Comments</h2>
     <ul class="list-unstyled">
-        <li class="mb-4">
-            <div class="card p-4">
-                <p><strong>User Name</strong> (Feb 7, 2025)</p>
-                <p>This is a comment on the discussion post.</p>
-            </div>
-        </li>
-        <!-- More comments here -->
+        @if (Model.Comments != null)
+        {
+            foreach (var comment in Model.Comments)
+            {
+                <li class="mb-4">
+                    <div class="card p-4">
+                        <p><strong>User Name</strong>@comment.CreateDate</p>
+                        <p>@comment.Content </p>
+                    </div>
+                </li>
+            }
+        }
     </ul>
 </div>
