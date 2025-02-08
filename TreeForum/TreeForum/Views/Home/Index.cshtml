@@ -8,20 +8,24 @@
     Powered by tree huggers everywhere.
 </div>
 
-<div class="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <main class="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+<a class="btn btn-primary" asp-area="" asp-controller="Discussions" asp-action="Create">Create New Discussion</a>
 
-        <ul class="flex flex-wrap list-none p-0">
+
+<div class="container min-vh-100 p-4">
+    <main class="d-flex flex-column align-items-center gap-5">
+        <ul class="list-unstyled w-100">
             @foreach (var item in Model)
             {
                 string imageUrl = Url.Content("/images/" + item.ImageFilename);
-                <li key="@item.DiscussionId" class="bg-amber-200 p-6 rounded-xl shadow-lg w-full flex items-center space-x-4">
-                    <a href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
-                        <img src="@imageUrl" class="img-fluid thumbnail" alt="@item.Title" />
-                    </a>
-                    <div>
-                        <h3>@item.Title</h3>
-                        <h4>@item.CreateDate</h4>
+                <li key="@item.DiscussionId" class="mb-4">
+                    <div class="card shadow-sm w-100">
+                        <a href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
+                            <img src="@imageUrl" class="card-img-top img-fluid thumbnail" alt="@item.Title" />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">@item.CreateDate</h6>
+                        </div>
                     </div>
                 </li>
             }
