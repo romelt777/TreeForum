@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Azure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -52,10 +53,15 @@ namespace TreeForum.Controllers
                 _context.Add(comment);
                 await _context.SaveChangesAsync();
 
-                //must redirect back to discussion
-                return RedirectToAction(nameof(Index));
+                //redirect back to discussion page
+                return RedirectToAction("GetDiscussion", "Home", new { id = comment.DiscussionId });
             }
-            ViewData["DiscussionId"] = new SelectList(_context.Discussion, "DiscussionId", "DiscussionId", comment.DiscussionId);
+
+            //setting discussion ID for the comment
+            ViewData["DiscussionId"] = comment.DiscussionId;
+            ViewData["CreateDate"] = DateTime.Now;
+
+
             return View(comment);
         }
 
