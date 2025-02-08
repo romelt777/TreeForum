@@ -25,15 +25,28 @@ namespace TreeForum.Controllers
             return View(discussions);
         }
 
-        public IActionResult Privacy()
+        //GetDiscussion : gets 1 discussion and all comments with discussion
+        public async Task<IActionResult> GetDiscussion(int? id)
         {
-            return View();
-        }
+            if (id == null)
+            {
+                return NotFound();
+            }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+           
+
+            var discussion = await _context.Discussion.Include("Comments").FirstOrDefaultAsync(m => m.DiscussionId == id);
+
+            Console.WriteLine(discussion.DiscussionId);
+
+            if (discussion == null)
+            {
+                return NotFound();
+            }
+
+            return View(discussion);
+
+            //return View()
         }
     }
 }
