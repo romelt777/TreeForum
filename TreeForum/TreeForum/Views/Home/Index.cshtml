@@ -22,14 +22,17 @@
         <ul class="list-unstyled w-100">
             @foreach (var item in Model)
             {
-                string imageUrl = Url.Content("/images/" + item.ImageFilename);
                 <li key="@item.DiscussionId" class="mb-4">
                     <a href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
                         <div class="card shadow-sm w-100">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-4">
-                                        <img src="@imageUrl" class="card-img-top img-fluid thumbnail" alt="@item.Title" />
+                                        @if (!string.IsNullOrEmpty(item.ImageFilename))
+                                        {
+                                            string imageUrl = Url.Content("/images/" + item.ImageFilename);
+                                            <img src="@imageUrl" class="img-fluid thumbnail" alt="@item.Title" />
+                                        }
                                     </div>
                                     <div class="col-4">
                                         <h5 class="card-title mb-0">@item.Title</h5>
