@@ -24,29 +24,44 @@
             {
                 string imageUrl = Url.Content("/images/" + item.ImageFilename);
                 <li key="@item.DiscussionId" class="mb-4">
-                    <div class="card shadow-sm w-100">
-                        <div class="card-body d-flex align-items-center justify-content-between">
-                            <a href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
-                                <img src="@imageUrl" class="card-img-top img-fluid thumbnail" alt="@item.Title" />
-                            </a>
-                            <h5 class="card-title mb-0">@item.Title</h5>
+                    <a href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
+                        <div class="card shadow-sm w-100">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="@imageUrl" class="card-img-top img-fluid thumbnail" alt="@item.Title" />
+                                    </div>
+                                    <div class="col-4">
+                                        <h5 class="card-title mb-0">@item.Title</h5>
+                                    </div>
+                                    <div class="col-4">
+                                        <p>Column 3, Row 1</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>@GenerateRandomUsername()</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h6 class="card-subtitle mb-0 text-muted">@item.CreateDate</h6>
+                                    </div>
+                                    <div class="col-4">
+                                        @{
+                                            int numComments = 0;
+                                            if (item.Comments != null)
+                                            {
+                                                numComments = item.Comments.Count;
+                                            }
+                                        }
+                                        <p class="d-flex align-items-center">
+                                            <i class="fa-regular fa-comment me-2"></i>
+                                            <span class="text-muted">@numComments</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body d-flex align-items-center justify-content-between">
-                            <p>@GenerateRandomUsername()</p>
-                            <h6 class="card-subtitle mb-0 text-muted">@item.CreateDate</h6>
-                            @{
-                                int numComments = 0;
-                                if (item.Comments != null)
-                                {
-                                    numComments = item.Comments.Count;
-                                }
-                            }
-                            <p class="d-flex align-items-center">
-                                <i class="fa-regular fa-comment me-2"></i>
-                                <span class="text-muted">@numComments</span> 
-                            </p>
-                        </div>
-                    </div>
+                    </a>
                 </li>
             }
         </ul>
