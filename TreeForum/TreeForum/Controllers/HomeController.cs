@@ -1,21 +1,28 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using TreeForum.Data;
 using TreeForum.Models;
 
 namespace TreeForum.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly TreeForumContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        private List<Discussion> discussions = new List<Discussion>();
+
+        public HomeController(TreeForumContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        //home page with all discussions
+        public async Task<IActionResult> Index()
         {
-            return View();
+            //getting discussions from database, saving to list
+            discussions = await _context.Discussion.ToListAsync();
+            return View(discussions);
         }
 
         public IActionResult Privacy()
