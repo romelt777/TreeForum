@@ -35,8 +35,7 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
-           
-
+            //getting the discussion and associated comments
             var discussion = await _context.Discussion.Include("Comments").FirstOrDefaultAsync(m => m.DiscussionId == id);
 
 
@@ -45,7 +44,7 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
-
+            //sorting commments by date, need null check
             if (discussion.Comments != null)
             {
                 discussion.Comments = discussion.Comments.OrderByDescending(c => c.CreateDate).ToList();
@@ -55,9 +54,51 @@ namespace TreeForum.Controllers
             {
                 return View(discussion);
             }
+        }
+
+        // GET: Discussions/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Discussions/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("DiscussionId,Title,Content,ImageFile,CreateDate")] Discussion discussion)
+        {
+            //setting the date created for discussion
+            discussion.CreateDate = DateTime.Now;
+
+            // rename the uploaded file to a guid (unique filename). Set before discussion saved in database.
+            discussion.ImageFilename = Guid.NewGuid().ToString() + Path.GetExtension(discussion.ImageFile?.FileName);
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(discussion);
+                await _context.SaveChangesAsync();
+
+                // Save the uploaded file after the discussion is saved in the database.
+                //saves in project wwwroot
+                if (discussion.ImageFile != null)
+                {
+                    //making findpath to save too.
+                    //it is a relative path on different environments.
+                    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", discussion.ImageFilename);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await discussion.ImageFile.CopyToAsync(fileStream);
+                    }
+                }
+
+                return RedirectToAction("GetDiscussion", new { id = discussion.DiscussionId });
 
 
-
+            }
+            return View(discussion);
 
         }
     }
