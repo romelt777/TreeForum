@@ -25,6 +25,13 @@
                         <div class="card-body">
                             <h5 class="card-title">@item.Title</h5>
                             <h6 class="card-subtitle mb-2 text-muted">@item.CreateDate</h6>
+                            @{
+                                int numComments = 0;
+                                if(item.Comments != null){
+                                    numComments = item.Comments.Count;
+                                }
+                            }
+                            <h6 class="card-subtitle mb-2 text-muted">@numComments</h6>
                         </div>
                     </div>
                 </li>
