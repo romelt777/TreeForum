@@ -14,6 +14,9 @@ namespace TreeForum.Controllers
     {
         private readonly TreeForumContext _context;
 
+        private List<Discussion> discussions = new List<Discussion>();
+
+
         public DiscussionsController(TreeForumContext context)
         {
             _context = context;
@@ -22,26 +25,15 @@ namespace TreeForum.Controllers
         // GET: Discussions
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Discussion.ToListAsync());
+            //getting discussions from database, saving to list
+            discussions = await _context.Discussion.Include("Comments").ToListAsync();
+
+            //sorting list from new to old
+            return View(discussions.OrderByDescending(t => t.CreateDate).ToList());
         }
 
         // GET: Discussions/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
-            var discussion = await _context.Discussion
-                .FirstOrDefaultAsync(m => m.DiscussionId == id);
-            if (discussion == null)
-            {
-                return NotFound();
-            }
-
-            return View(discussion);
-        }
 
         // GET: Discussions/Create
         public IActionResult Create()

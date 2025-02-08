@@ -40,10 +40,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY3Vzc2lvbnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rom/Documents/NSCC/WINTER2025/INFT4000_ASPNET/TreeForum/TreeForum/TreeForum/Views/Discussions/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY3Vzc2lvbnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Rom/Documents/NSCC/WINTER2025/INFT4000_ASPNET/TreeForum/TreeForum/TreeForum/Views/Discussions/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY3Vzc2lvbnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,10 +58,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Rom/Documents/NSCC/WINTER2025/INFT4000_ASPNET/TreeForum/TreeForum/TreeForum/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Rom/Documents/NSCC/WINTER2025/INFT4000_ASPNET/TreeForum/TreeForum/TreeForum/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Rom/Documents/NSCC/WINTER2025/INFT4000_ASPNET/TreeForum/TreeForum/TreeForum/Views/Shared/Error.cshtml]
