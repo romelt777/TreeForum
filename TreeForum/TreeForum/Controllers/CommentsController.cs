@@ -20,10 +20,13 @@ namespace TreeForum.Controllers
             _context = context;
         }
 
+        //DELETED METHODS:
         // GET: Comments
-
-
         // GET: Comments/Details/5
+        // GET: Comments/Edit/5
+        // POST: Comments/Edit/5
+        // GET: Comments/Delete/5
+        // POST: Comments/Delete/5
 
 
         // GET: Comments/Create
@@ -63,23 +66,6 @@ namespace TreeForum.Controllers
 
 
             return View(comment);
-        }
-
-        // GET: Comments/Edit/5
-
-
-        // POST: Comments/Edit/5
-   
-
-        // GET: Comments/Delete/5
-
-
-        // POST: Comments/Delete/5
-
-
-        private bool CommentExists(int id)
-        {
-            return _context.Comment.Any(e => e.CommentId == id);
         }
     }
 }
