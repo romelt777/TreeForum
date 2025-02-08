@@ -62,3 +62,65 @@ body {
     line-height: 60px; /* Vertically center the text there */
     background-color: #f5f5f5;
 }
+
+/*discussion css
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.discussion-post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.discussion-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.discussion-date {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+    .discussion-date span {
+        font-weight: bold;
+    }
+
+.discussion-content {
+    font-size: 1.125rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.discussion-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .discussion-post {
+        padding: 15px;
+    }
+
+    .discussion-title {
+        font-size: 1.5rem;
+    }
+
+    .discussion-content {
+        font-size: 1rem;
+    }
+}

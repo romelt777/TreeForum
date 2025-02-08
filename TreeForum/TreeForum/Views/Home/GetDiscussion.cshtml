@@ -6,9 +6,15 @@
 
 }
 
-<h1>GetDiscussion</h1>
 
-<div class="text-center shadow-sm p-3 mb-5 bg-white rounded">
-    <h1>@Model.Title</h1>
-    <img src=@imgString class="img-fluid" alt="Model.Title" />
+
+<div class="discussion-post">
+    <h1 class="discussion-title">@Model.Title</h1>
+    <p class="discussion-date">Posted on: <span>@Model.CreateDate</span></p>
+    <div class="discussion-content">
+        <p>@Model.Content</p>
+    </div>
+    <div class="discussion-image">
+        <img src=@imgString alt="Image related to discussion" />
+    </div>
 </div>
