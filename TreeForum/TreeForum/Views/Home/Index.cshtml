@@ -23,7 +23,7 @@
             @foreach (var item in Model)
             {
                 <li key="@item.DiscussionId" class="mb-4">
-                    <a href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
+                    <a class="text-decoration-none"  href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
                         <div class="card shadow-sm w-100">
                             <div class="container">
                                 <div class="row">
@@ -32,13 +32,14 @@
                                         {
                                             string imageUrl = Url.Content("/images/" + item.ImageFilename);
                                             <img src="@imageUrl" class="img-fluid thumbnail" alt="@item.Title" />
+                                        }else{
+                                            <img src="~/images/default_tree.jpg" class="img-fluid thumbnail" alt="@item.Title" />
                                         }
                                     </div>
                                     <div class="col-4">
-                                        <h5 class="card-title mb-0">@item.Title</h5>
+                                        <h5 class="card-title mb-0 text-decoration-underline">@item.Title</h5>
                                     </div>
                                     <div class="col-4">
-                                        <p>Column 3, Row 1</p>
                                     </div>
                                 </div>
                                 <div class="row">

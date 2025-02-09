@@ -39,6 +39,10 @@
                         string imageUrl= Url.Content("/images/" + item.ImageFilename);
                         <img src="@imageUrl" class="img-fluid thumbnail" alt="@item.Title" />
                     }
+                    else
+                    {
+                        <img src="~/images/no_image_found.png" class="img-fluid thumbnail" alt="@item.Title" />
+                    }
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Title)

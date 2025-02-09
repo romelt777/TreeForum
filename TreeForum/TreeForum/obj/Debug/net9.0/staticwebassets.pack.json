@@ -25,8 +25,16 @@
       "PackagePath": "staticwebassets\\images\\a1ca2311-99c0-4543-848d-fecbe8a6ef73.jpg"
     },
     {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\default_tree.jpg",
+      "PackagePath": "staticwebassets\\images\\default_tree.jpg"
+    },
+    {
       "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\e842f62a-0b0a-4925-9309-799f66dc5b79.jpg",
       "PackagePath": "staticwebassets\\images\\e842f62a-0b0a-4925-9309-799f66dc5b79.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\no_image_found.png",
+      "PackagePath": "staticwebassets\\images\\no_image_found.png"
     },
     {
       "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\js\\site.js",
