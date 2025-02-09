@@ -66,7 +66,19 @@ body {
     border-color: #45a049;
 }
 .fa-pencil-alt, .fa-comment {
-    color: #2C6B2F; /* Green color for icons */
+    color: #2C6B2F; 
+}
+
+.card-title {
+    text-decoration: none;
+}
+
+.card-title:hover {
+    text-decoration: underline;
+}
+
+.hover_home:hover{
+    opacity:80%
 }
 
 

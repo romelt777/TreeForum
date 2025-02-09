@@ -24,7 +24,7 @@
             {
                 <li key="@item.DiscussionId" class="mb-4">
                     <a class="text-decoration-none"  href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
-                        <div class="card shadow-sm w-100">
+                        <div class="card shadow-sm w-100 hover_home">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-4">
@@ -32,7 +32,7 @@
 
                                     </div>
                                     <div class="col-4">
-                                        <h1 class="card-title mb-0 text-decoration-underline pt-5">@item.Title</h1>
+                                        <h1 class="card-title mb-0 mt-5">@item.Title</h1>
                                     </div>
                                     <div class="col-4">
                                         @if (!string.IsNullOrEmpty(item.ImageFilename))
