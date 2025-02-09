@@ -56,6 +56,20 @@ body {
     border: 2px solid #006400; 
 }
 
+.btn-success {
+    background-color: #388E3C;
+    border-color: #006400;
+}
+
+.btn-success:hover {
+    background-color: #2C6B2F;
+    border-color: #45a049;
+}
+.fa-pencil-alt, .fa-comment {
+    color: #2C6B2F; /* Green color for icons */
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #e7f5e1;
