@@ -22,6 +22,10 @@ namespace TreeForum.Controllers
             _context = context;
         }
 
+        //DELETED METHODS:
+        // GET: Discussions/Details/5
+
+
         // GET: Discussions
         public async Task<IActionResult> Index()
         {
@@ -31,9 +35,6 @@ namespace TreeForum.Controllers
             //sorting list from new to old
             return View(discussions.OrderByDescending(t => t.CreateDate).ToList());
         }
-
-        // GET: Discussions/Details/5
-
 
         // GET: Discussions/Create
         public IActionResult Create()
