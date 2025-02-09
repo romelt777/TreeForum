@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/TreeForum/css/site.as80otvoxt.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"as80otvoxt"},{"Name":"integrity","Value":"sha256-hjfmORA5zZ3N9D2LtUjl3hKUTRc0L4nRKMCvYC2b2Js="},{"Name":"label","Value":"_content/TreeForum/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1829"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hjfmORA5zZ3N9D2LtUjl3hKUTRc0L4nRKMCvYC2b2Js=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 02:00:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TreeForum/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LLIzu/VaRxW77R0qASWvfAcom1ZlKvlrVgnWrB8y\u002BNA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2205"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LLIzu/VaRxW77R0qASWvfAcom1ZlKvlrVgnWrB8y\u002BNA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 02:33:40 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/TreeForum/css/site.s6mqr0ilji.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s6mqr0ilji"},{"Name":"integrity","Value":"sha256-LLIzu/VaRxW77R0qASWvfAcom1ZlKvlrVgnWrB8y\u002BNA="},{"Name":"label","Value":"_content/TreeForum/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2205"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LLIzu/VaRxW77R0qASWvfAcom1ZlKvlrVgnWrB8y\u002BNA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 02:33:40 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hjfmORA5zZ3N9D2LtUjl3hKUTRc0L4nRKMCvYC2b2Js="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1829"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hjfmORA5zZ3N9D2LtUjl3hKUTRc0L4nRKMCvYC2b2Js=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 02:00:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TreeForum/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -71,6 +71,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4ZJ8Lxd08Qgjn4E1XDi7gkPlm\u002BCfL/0TcWGM19i\u002B\u002Bwc="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"23088"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00224ZJ8Lxd08Qgjn4E1XDi7gkPlm\u002BCfL/0TcWGM19i\u002B\u002Bwc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 00:47:45 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TreeForum/images/default_user.ekb5gnb6ri.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\default_user.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ekb5gnb6ri"},{"Name":"integrity","Value":"sha256-zsWAbO/0Cd4OYOd6zLiSv3gtsSTsQa4pJDr2t4Tangw="},{"Name":"label","Value":"_content/TreeForum/images/default_user.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6405"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022zsWAbO/0Cd4OYOd6zLiSv3gtsSTsQa4pJDr2t4Tangw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 01:20:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TreeForum/images/default_user.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\default_user.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zsWAbO/0Cd4OYOd6zLiSv3gtsSTsQa4pJDr2t4Tangw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6405"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022zsWAbO/0Cd4OYOd6zLiSv3gtsSTsQa4pJDr2t4Tangw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 01:20:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TreeForum/images/e842f62a-0b0a-4925-9309-799f66dc5b79.h79ty5wr2k.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e842f62a-0b0a-4925-9309-799f66dc5b79.jpg'))</AssetFile>
