@@ -14,7 +14,7 @@
     Powered by tree huggers everywhere.
 </div>
 
-<a class="btn btn-primary ms-4" asp-area="" asp-controller="Home" asp-action="Create">Create New Discussion</a>
+<a class="btn btn-success ms-4" asp-area="" asp-controller="Home" asp-action="Create">Create New Discussion</a>
 
 
 <div class="container min-vh-100 p-4">
@@ -28,11 +28,11 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-4">
-                                        <img src="~/images/default_user.jpg" class="img-fluid thumbnail pt-3 pb-1" alt="@item.Title" />
+                                        <img src="~/images/default_user.jpg" class="img-fluid thumbnail_user pt-3 pb-1" alt="@item.Title" />
 
                                     </div>
                                     <div class="col-4">
-                                        <h5 class="card-title mb-0 text-decoration-underline">@item.Title</h5>
+                                        <h1 class="card-title mb-0 text-decoration-underline pt-5">@item.Title</h1>
                                     </div>
                                     <div class="col-4">
                                         @if (!string.IsNullOrEmpty(item.ImageFilename))
@@ -51,7 +51,10 @@
                                         <p>@GenerateRandomUsername()</p>
                                     </div>
                                     <div class="col-4">
-                                        <h6 class="card-subtitle mb-0 text-muted">@item.CreateDate</h6>
+                                        <p class="d-flex align-items-center">
+                                            <i class="fa fa-pencil-alt"></i>
+                                            <span class="card-subtitle mb-0 text-muted">@item.CreateDate</span>
+                                        </p>
                                     </div>
                                     <div class="col-4">
                                         @{
