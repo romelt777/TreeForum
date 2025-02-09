@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/TreeForum/css/site.as80otvoxt.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"as80otvoxt"},{"Name":"integrity","Value":"sha256-hjfmORA5zZ3N9D2LtUjl3hKUTRc0L4nRKMCvYC2b2Js="},{"Name":"label","Value":"_content/TreeForum/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1829"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hjfmORA5zZ3N9D2LtUjl3hKUTRc0L4nRKMCvYC2b2Js=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 02:00:23 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TreeForum/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hjfmORA5zZ3N9D2LtUjl3hKUTRc0L4nRKMCvYC2b2Js="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1829"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hjfmORA5zZ3N9D2LtUjl3hKUTRc0L4nRKMCvYC2b2Js=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 02:00:23 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/5RzhwTqHPfl8xw/vq/a1BeO2X1QhnlSnUF21l/y2Ag="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2294"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/5RzhwTqHPfl8xw/vq/a1BeO2X1QhnlSnUF21l/y2Ag=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 02:36:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TreeForum/css/site.py2c5jsf6a.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"py2c5jsf6a"},{"Name":"integrity","Value":"sha256-/5RzhwTqHPfl8xw/vq/a1BeO2X1QhnlSnUF21l/y2Ag="},{"Name":"label","Value":"_content/TreeForum/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2294"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/5RzhwTqHPfl8xw/vq/a1BeO2X1QhnlSnUF21l/y2Ag=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 02:36:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TreeForum/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

@@ -18,14 +18,14 @@
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a href="@Url.Action("GetDiscussion", "Home", new { id = ViewBag.DiscussionId })">Back To Discussion</a>
+    <a href="@Url.Action("GetDiscussion", "Home", new { id = ViewBag.DiscussionId })" class="text-success d-inline">Back To Discussion</a>
 </div>
 
 @section Scripts {

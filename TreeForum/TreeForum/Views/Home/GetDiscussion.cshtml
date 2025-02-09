@@ -33,7 +33,15 @@
         </div>
     </div>
     <div class="new-comment-button text-center my-4 d-flex justify-content-between align-items-center">
-        <h2>Comments</h2>
+        @{
+            int numComments = 0;
+            if (Model.Comments != null)
+            {
+                numComments = Model.Comments.Count;
+            }
+        }
+
+        <h2>Comments (@numComments)</h2>        
         <a class="btn btn-success" asp-area="" asp-controller="Comments" asp-action="Create" asp-route-id="@Model.DiscussionId">
             Add New Comment
         </a>
