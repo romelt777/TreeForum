@@ -14,7 +14,7 @@
 
 
 
-<div class="discussion-post container mt-5 getDiscussion_post">
+<div class="discussion-post container mt-5 ">
     <div class="card">
         <div class="card-body">
             <h1 class="card-title mb-4">@Model.Title</h1>
@@ -53,8 +53,8 @@
         {
             foreach (var comment in Model.Comments)
             {
-                <li class="mb-4">
-                    <div class="card p-4">
+                <li class="mb-4" >
+                    <div class="card p-4 getDiscussion_post">
                         <p><strong>@GenerateRandomUsername()</strong> Comment Date: @comment.CreateDate</p>
                         <p>@comment.Content </p>
                     </div>

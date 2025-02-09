@@ -10,6 +10,11 @@
     height: 100px;
 }
 
+.thumbnail_nav {
+    width: 50px;
+    height: 50px;
+}
+
 .profile-pic {
     width: 150px;
     height: auto;
@@ -87,7 +92,7 @@ body {
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to bottom, #e7f5e1, #9feba2);
     margin: 0;
     padding: 0;

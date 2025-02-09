@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\no_image_found.png"
     },
     {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\tree_background.jpg",
+      "PackagePath": "staticwebassets\\images\\tree_background.jpg"
+    },
+    {
       "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
