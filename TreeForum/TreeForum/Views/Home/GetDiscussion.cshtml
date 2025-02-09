@@ -14,7 +14,7 @@
 
 
 
-<div class="discussion-post container mt-5 ">
+<div class="discussion-post container mt-5 mb-5">
     <div class="card">
         <div class="card-body">
             <h1 class="card-title mb-4">@Model.Title</h1>
@@ -55,7 +55,10 @@
             {
                 <li class="mb-4" >
                     <div class="card p-4 getDiscussion_post">
-                        <p><strong>@GenerateRandomUsername()</strong> Comment Date: @comment.CreateDate</p>
+                        <p class="d-flex justify-content-between">
+                            <strong>@GenerateRandomUsername()</strong>
+                            <span>Comment Date: @comment.CreateDate</span>
+                        </p>
                         <p>@comment.Content </p>
                     </div>
                 </li>
