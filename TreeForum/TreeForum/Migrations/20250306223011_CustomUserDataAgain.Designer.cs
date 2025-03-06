@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TreeForum.Data;
 
@@ -11,9 +12,11 @@ using TreeForum.Data;
 namespace TreeForum.Migrations
 {
     [DbContext(typeof(TreeForumContext))]
-    partial class TreeForumContextModelSnapshot : ModelSnapshot
+    [Migration("20250306223011_CustomUserDataAgain")]
+    partial class CustomUserDataAgain
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

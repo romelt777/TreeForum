@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<TreeForumContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("TreeForumContext") ?? throw new InvalidOperationException("Connection string 'TreeForumContext' not found.")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<TreeForumContext>();
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<TreeForumContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

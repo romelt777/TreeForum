@@ -9,17 +9,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TreeForum.Data;
 
 namespace TreeForum.Areas.Identity.Pages.Account.Manage
 {
     public class IndexModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
         public IndexModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager)
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -51,6 +52,23 @@ namespace TreeForum.Areas.Identity.Pages.Account.Manage
         /// </summary>
         public class InputModel
         {
+            ///////////////////////////////////////
+            // BEGIN: ApplicationUser Custom Fields
+            ///////////////////////////////////////
+
+            [Required]
+            [Display(Name = "Name or Handle")]
+            public string Name { get; set; }
+
+            public string Location { get; set; }
+
+
+            /////////////////////////////////////
+            // END: ApplicationUser Custom Fields
+            /////////////////////////////////////
+
+
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -60,7 +78,7 @@ namespace TreeForum.Areas.Identity.Pages.Account.Manage
             public string PhoneNumber { get; set; }
         }
 
-        private async Task LoadAsync(IdentityUser user)
+        private async Task LoadAsync(ApplicationUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
@@ -69,6 +87,16 @@ namespace TreeForum.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
+                ///////////////////////////////////////
+                // BEGIN: ApplicationUser Custom Fields
+                ///////////////////////////////////////
+                Name = user.Name,
+                Location = user.Location,
+
+                ///////////////////////////////////////
+                // END: ApplicationUser Custom Fields
+                ///////////////////////////////////////
+
                 PhoneNumber = phoneNumber
             };
         }
@@ -109,6 +137,26 @@ namespace TreeForum.Areas.Identity.Pages.Account.Manage
                     return RedirectToPage();
                 }
             }
+
+            ///////////////////////////////////////
+            // BEGIN: ApplicationUser Custom Fields
+            ///////////////////////////////////////
+
+            if (Input.Name != user.Name)
+            {
+                user.Name = Input.Name;
+            }
+
+            if (Input.Location != user.Location)
+            {
+                user.Location = Input.Location;
+            }
+
+            await _userManager.UpdateAsync(user);
+
+            ///////////////////////////////////////
+            // END: ApplicationUser Custom Fields
+            ///////////////////////////////////////
 
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";

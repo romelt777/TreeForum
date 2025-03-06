@@ -9,7 +9,7 @@ using TreeForum.Models;
 
 namespace TreeForum.Data
 {
-    public class TreeForumContext : IdentityDbContext
+    public class TreeForumContext : IdentityDbContext<ApplicationUser>
     {
         public TreeForumContext (DbContextOptions<TreeForumContext> options)
             : base(options)
