@@ -52,7 +52,8 @@ namespace TreeForum.Controllers
             //setting the date created for discussion
             discussion.CreateDate = DateTime.Now;
 
-
+            // rename the uploaded file to a guid (unique filename). Set before discussion saved in database.
+            discussion.ImageFilename = Guid.NewGuid().ToString() + Path.GetExtension(discussion.ImageFile?.FileName);
 
             if (ModelState.IsValid)
             {
@@ -108,6 +109,10 @@ namespace TreeForum.Controllers
             if (id != discussion.DiscussionId)
             {
                 return NotFound();
+            }
+            if(discussion.ImageFilename == null)
+            {
+                discussion.ImageFilename = "";
             }
 
             if (ModelState.IsValid)
