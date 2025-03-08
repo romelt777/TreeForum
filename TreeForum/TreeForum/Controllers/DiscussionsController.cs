@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -15,13 +16,16 @@ namespace TreeForum.Controllers
     public class DiscussionsController : Controller
     {
         private readonly TreeForumContext _context;
+        //application user
+        private readonly UserManager<ApplicationUser> _userManager;
 
         private List<Discussion> discussions = new List<Discussion>();
 
 
-        public DiscussionsController(TreeForumContext context)
+        public DiscussionsController(TreeForumContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         //DELETED METHODS:
@@ -31,8 +35,14 @@ namespace TreeForum.Controllers
         // GET: Discussions
         public async Task<IActionResult> Index()
         {
+            //get id of user logged in
+            var userId = _userManager.GetUserId(User);
+
+
             //getting discussions from database, saving to list
-            discussions = await _context.Discussion.Include("Comments").ToListAsync();
+            discussions = await _context.Discussion
+                .Where(d => d.ApplicationUserId == userId) //only discussions created by user
+                .Include("Comments").ToListAsync();
 
             //sorting list from new to old
             return View(discussions.OrderByDescending(t => t.CreateDate).ToList());
@@ -54,8 +64,12 @@ namespace TreeForum.Controllers
             //setting the date created for discussion
             discussion.CreateDate = DateTime.Now;
 
-            // save image as "", will get overwritten if there is image, if not will stay "" 
+            // save image as "default.jpg", will get overwritten if there is image, if not will stay "default,jpg" 
             discussion.ImageFilename = "default.jpg";
+
+            //set the user id to the logged in user
+            var userId = _userManager.GetUserId(User);
+            discussion.ApplicationUserId = userId;
 
             if (ModelState.IsValid)
             {
@@ -93,7 +107,14 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
-            var discussion = await _context.Discussion.FindAsync(id);
+            //get id of user logged in
+            var userId = _userManager.GetUserId(User);
+
+            var discussion = await _context.Discussion
+                .Include("Comments")
+                .Where(d => d.ApplicationUserId == userId) //only discussions created by user
+                .FirstOrDefaultAsync(m => m.DiscussionId == id);
+
             if (discussion == null)
             {
                 return NotFound();
@@ -106,7 +127,7 @@ namespace TreeForum.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("DiscussionId,Title,Content,ImageFilename,CreateDate")] Discussion discussion)
+        public async Task<IActionResult> Edit(int id, [Bind("DiscussionId,Title,Content,ImageFilename,CreateDate,ApplicationUserId")] Discussion discussion)
         {
             if (id != discussion.DiscussionId)
             {
@@ -150,8 +171,14 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
+            //get id of user logged in
+            var userId = _userManager.GetUserId(User);
+
+
             var discussion = await _context.Discussion
+                .Where(d => d.ApplicationUserId == userId) //only discussions created by user
                 .FirstOrDefaultAsync(m => m.DiscussionId == id);
+
             if (discussion == null)
             {
                 return NotFound();
@@ -165,13 +192,23 @@ namespace TreeForum.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var discussion = await _context.Discussion.FindAsync(id);
+            //get id of user logged in
+            var userId = _userManager.GetUserId(User);
+
+            var discussion = await _context.Discussion
+                .Where(d => d.ApplicationUserId == userId) //only discussions created by user
+                .FirstOrDefaultAsync(m => m.DiscussionId == id);
+
             if (discussion != null)
             {
                 _context.Discussion.Remove(discussion);
+                await _context.SaveChangesAsync();
+            }
+            else
+            {
+                return NotFound();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
