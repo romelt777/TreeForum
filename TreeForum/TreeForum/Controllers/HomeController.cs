@@ -87,10 +87,15 @@ namespace TreeForum.Controllers
             //setting the date created for discussion
             discussion.CreateDate = DateTime.Now;
 
-
-            if(discussion.ImageFilename == null)
+            // save image as "default.jpg" if null 
+            if (discussion.ImageFile == null)
             {
                 discussion.ImageFilename = "default.jpg";
+            }
+            else
+            {
+                // rename the uploaded file to a guid (unique filename). Set before discussion saved in database.
+                discussion.ImageFilename = Guid.NewGuid().ToString() + Path.GetExtension(discussion.ImageFile?.FileName);
             }
 
             //getting the user logged in
