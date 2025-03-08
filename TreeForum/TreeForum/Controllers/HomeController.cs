@@ -25,7 +25,7 @@ namespace TreeForum.Controllers
         public async Task<IActionResult> Index()
         {
             //getting discussions from database, saving to list
-            discussions = await _context.Discussion.Include("Comments").Include("ApplicationUser").ToListAsync();
+            discussions = await _context.Discussion.Include(d => d.Comments).ThenInclude(c => c.ApplicationUser).ToListAsync();
 
             //sorting list from new to old
             return View(discussions.OrderByDescending(t => t.CreateDate).ToList());
@@ -39,8 +39,10 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
-            //getting the discussion and associated comments
-            var discussion = await _context.Discussion.Include(d => d.Comments).ThenInclude(c => c.ApplicationUser).FirstOrDefaultAsync(m => m.DiscussionId == id);
+            //getting the discussion (without comments and application user)
+            var discussion = await _context.Discussion
+                .Include(d => d.ApplicationUser) //load the applicationUser for the discussion
+                .FirstOrDefaultAsync(m => m.DiscussionId == id);
 
 
             if (discussion == null)
@@ -48,16 +50,18 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
-            //sorting commments by date, need null check
-            if (discussion.Comments != null)
-            {
-                discussion.Comments = discussion.Comments.OrderByDescending(c => c.CreateDate).ToList();
-                return View(discussion);
-            }
-            else
-            {
-                return View(discussion);
-            }
+            //loading the comments with their associated ApplicationUser
+            await _context.Entry(discussion)
+                .Collection(d => d.Comments)
+                .Query()
+                .Include(c => c.ApplicationUser) //load the applicationUser for each comment
+                .LoadAsync();
+
+            //initialize comments (avoid null reference)
+            discussion.Comments = discussion.Comments ?? new List<Comment>();
+            discussion.Comments = discussion.Comments.OrderBy(c => c.CreateDate).ToList();
+
+            return View(discussion);
         }
 
         // GET: Discussions/Create

@@ -2,14 +2,7 @@
 
 @{
     ViewData["Title"] = "GetDiscussion";
-    var imgString = "../../images/" + Model.ImageFilename;
 
-}
-@functions {
-    public string GenerateRandomUsername()
-    {
-        return "User" + Guid.NewGuid().ToString("N").Substring(0, 8);
-    }
 }
 
 
@@ -54,14 +47,17 @@
 
 
     <ul class="list-unstyled">
-        @if (Model.Comments != null)
+        @if (Model.Comments != null && Model.Comments.Any())
         {
             foreach (var comment in Model.Comments)
             {
                 <li class="mb-4" >
                     <div class="card p-4 getDiscussion_post">
                         <p class="d-flex justify-content-between">
-                            <strong>@comment.ApplicationUser.Name</strong>
+                            @if (comment.ApplicationUser != null)
+                            {
+                                <strong>@comment.ApplicationUser.Name</strong>
+                            }
                             <span>Comment Date: @comment.CreateDate</span>
                         </p>
                         <p>@comment.Content </p>
