@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TreeForum.Data;
@@ -9,12 +10,15 @@ namespace TreeForum.Controllers
     public class HomeController : Controller
     {
         private readonly TreeForumContext _context;
+        //application user
+        private readonly UserManager<ApplicationUser> _userManager;
 
         private List<Discussion> discussions = new List<Discussion>();
 
-        public HomeController(TreeForumContext context)
+        public HomeController(TreeForumContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         //home page with all discussions

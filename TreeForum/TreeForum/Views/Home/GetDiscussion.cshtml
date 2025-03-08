@@ -23,7 +23,7 @@
                 <p>@Model.Content</p>
             </div>
             <div class="discussion-image mb-4">
-                @if (!string.IsNullOrEmpty(Model.ImageFilename))
+                @if (Model.ImageFilename != "default.jpg")
                 {
                     string imageUrl = Url.Content("/images/" + Model.ImageFilename);
                     <img src="@imageUrl" class="img-fluid thumbnail pt-3 pb-1" alt="@Model.Title" />

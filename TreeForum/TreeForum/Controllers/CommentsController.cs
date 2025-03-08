@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Azure;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -17,10 +18,12 @@ namespace TreeForum.Controllers
     public class CommentsController : Controller
     {
         private readonly TreeForumContext _context;
-
-        public CommentsController(TreeForumContext context)
+        //application user
+        private readonly UserManager<ApplicationUser> _userManager;
+        public CommentsController(TreeForumContext context, UserManager<ApplicationUser> userManager )
         {
             _context = context;
+            _userManager = userManager;
         }
 
         //DELETED METHODS:
@@ -54,6 +57,10 @@ namespace TreeForum.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CommentId,Content,CreateDate,DiscussionId")] Comment comment)
         {
+            //get id of user logged in
+            var userId = _userManager.GetUserId(User);
+            comment.ApplicationUserId = userId;
+
             if (ModelState.IsValid)
             {
                 _context.Add(comment);
