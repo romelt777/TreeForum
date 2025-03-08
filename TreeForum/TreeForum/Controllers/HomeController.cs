@@ -63,7 +63,18 @@ namespace TreeForum.Controllers
         // GET: Discussions/Create
         public IActionResult Create()
         {
-            return View();
+            //getting the user logged in
+            var userId = _userManager.GetUserId(User);
+
+            if(userId == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+
+            }
         }
 
         // POST: Discussions/Create
@@ -76,7 +87,12 @@ namespace TreeForum.Controllers
             //setting the date created for discussion
             discussion.CreateDate = DateTime.Now;
 
+            // save image as "default.jpg", will get overwritten if there is image, if not will stay "default,jpg" 
+            discussion.ImageFilename = "default.jpg";
 
+            //getting the user logged in
+            var userId = _userManager.GetUserId(User);
+            discussion.ApplicationUserId = userId;
 
             if (ModelState.IsValid)
             {
