@@ -1,5 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
+
+	//injecting user manager and sign in manager
+    @using Microsoft.AspNetCore.Identity
+    @using TreeForum.Data
+
+
+    @inject SignInManager<ApplicationUser> SignInManager
+    @inject UserManager<ApplicationUser> UserManager
 }
 @functions {
     public string GenerateRandomUsername()
@@ -7,6 +16,10 @@
         return "User" + Guid.NewGuid().ToString("N").Substring(0, 8);
     }
 }
+
+
+
+
 <h1 class="fw-bold mt-5 text-center">Tree Discussion</h1>
 
 <div class="text-center mb-4">
@@ -14,8 +27,14 @@
     Powered by tree huggers everywhere.
 </div>
 
-
-<a class="btn btn-success ms-4" asp-area="" asp-controller="Home" asp-action="Create">Create New Discussion</a>
+@if (SignInManager.IsSignedIn(User))
+{
+    <a class="btn btn-success ms-4" asp-area="" asp-controller="Home" asp-action="Create">Create New Discussion</a>
+}
+else{
+	<a class="btn btn-success ms-4" asp-area="Identity" asp-page="/Account/Login">Login to Create New Discussion</a>
+	<a class="btn btn-success ms-4" asp-area="Identity" asp-page="/Account/Register">Register to Create New Discussion</a>
+}
 
 
 <div class="container min-vh-100 p-4">
