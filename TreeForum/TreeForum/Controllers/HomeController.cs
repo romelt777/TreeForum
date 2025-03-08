@@ -25,7 +25,7 @@ namespace TreeForum.Controllers
         public async Task<IActionResult> Index()
         {
             //getting discussions from database, saving to list
-            discussions = await _context.Discussion.Include("Comments").ToListAsync();
+            discussions = await _context.Discussion.Include("Comments").Include("ApplicationUser").ToListAsync();
 
             //sorting list from new to old
             return View(discussions.OrderByDescending(t => t.CreateDate).ToList());
