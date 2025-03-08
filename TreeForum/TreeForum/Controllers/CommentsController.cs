@@ -43,9 +43,13 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
+            //get user id
+            var userId = _userManager.GetUserId(User);
+
             //setting discussion ID for the comment
             ViewData["DiscussionId"] = id;
             ViewData["CreateDate"] = DateTime.Now;
+            ViewData["ApplicationUserId"] = userId;
 
             return View();
         }
@@ -73,6 +77,7 @@ namespace TreeForum.Controllers
             //setting discussion ID for the comment
             ViewData["DiscussionId"] = comment.DiscussionId;
             ViewData["CreateDate"] = DateTime.Now;
+            ViewData["ApplicationUserId"] = userId;
 
 
             return View(comment);
