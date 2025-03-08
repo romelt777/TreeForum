@@ -21,6 +21,10 @@
     border-radius: 50%;
 }
 
+.nav-link:hover {
+    background-color: #f8f9fa; 
+    border-radius: 5px; 
+}
 
 @media (max-width: 992px) {
     .masonry-grid {

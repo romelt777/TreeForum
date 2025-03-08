@@ -64,6 +64,11 @@
                     </div>
                 </li>
             }
+            <div class="d-flex justify-content-end">
+                <a class="btn btn-success " asp-area="" asp-controller="Comments" asp-action="Create" asp-route-id="@Model.DiscussionId">
+                    Add New Comment
+                </a>
+            </div>
         }
     </ul>
 </div>
