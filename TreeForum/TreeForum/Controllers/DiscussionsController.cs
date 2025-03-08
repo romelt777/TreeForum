@@ -64,8 +64,16 @@ namespace TreeForum.Controllers
             //setting the date created for discussion
             discussion.CreateDate = DateTime.Now;
 
-            // save image as "default.jpg", will get overwritten if there is image, if not will stay "default,jpg" 
-            discussion.ImageFilename = "default.jpg";
+            // save image as "default.jpg" if null 
+            if (discussion.ImageFile == null)
+            {
+                discussion.ImageFilename = "default.jpg";
+            }
+            else
+            {
+                // rename the uploaded file to a guid (unique filename). Set before discussion saved in database.
+                discussion.ImageFilename = Guid.NewGuid().ToString() + Path.GetExtension(discussion.ImageFile?.FileName);
+            }
 
             //set the user id to the logged in user
             var userId = _userManager.GetUserId(User);
@@ -80,12 +88,10 @@ namespace TreeForum.Controllers
                 //saves in project wwwroot
                 if (discussion.ImageFile != null)
                 {
+
                     //making findpath to save too.
                     //it is a relative path on different environments.
                     string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", discussion.ImageFilename);
-
-                    // rename the uploaded file to a guid (unique filename). Set before discussion saved in database.
-                    discussion.ImageFilename = Guid.NewGuid().ToString() + Path.GetExtension(discussion.ImageFile?.FileName);
 
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {

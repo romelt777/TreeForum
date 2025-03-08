@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DqNvO0vN7hVpwpiUFkG9RYdQDDdt0ew9LQS0yBLBDLY=",
+  "Hash": "YY8FP0v3QYFZJnKt9+Ldjp+PapcOKQOnZuLIiZ46wMk=",
   "Source": "TreeForum",
   "BasePath": "_content/TreeForum",
   "Mode": "Default",
@@ -4112,6 +4112,69 @@
       "OriginalItemSpec": "wwwroot\\images\\177e8a3b-93ef-4dc2-b219-c03b7cd69892.png"
     },
     {
+      "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\216f7f6c-f90e-43e7-95f1-8e7dabe362a1.jpg",
+      "SourceId": "TreeForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\",
+      "BasePath": "_content/TreeForum",
+      "RelativePath": "images/216f7f6c-f90e-43e7-95f1-8e7dabe362a1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0cm4eaopws",
+      "Integrity": "EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\216f7f6c-f90e-43e7-95f1-8e7dabe362a1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\24a380b5-1886-48c6-ab1b-4afa12cf78aa.png",
+      "SourceId": "TreeForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\",
+      "BasePath": "_content/TreeForum",
+      "RelativePath": "images/24a380b5-1886-48c6-ab1b-4afa12cf78aa#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8avk8teqxe",
+      "Integrity": "oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\24a380b5-1886-48c6-ab1b-4afa12cf78aa.png"
+    },
+    {
+      "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b.jpg",
+      "SourceId": "TreeForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\",
+      "BasePath": "_content/TreeForum",
+      "RelativePath": "images/3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rf7f6apcee",
+      "Integrity": "Z5GI6SX3RZ093+8/2qGDLdTxya9yesX6j0oYiglwXxU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\3c30d542-9a5e-4aa9-af40-df6faaad82d4.jpg",
       "SourceId": "TreeForum",
       "SourceType": "Discovered",
@@ -4131,6 +4194,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\3c30d542-9a5e-4aa9-af40-df6faaad82d4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\6f0293ad-e5aa-44d2-9227-75071ad08b87.jpg",
+      "SourceId": "TreeForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\",
+      "BasePath": "_content/TreeForum",
+      "RelativePath": "images/6f0293ad-e5aa-44d2-9227-75071ad08b87#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h79ty5wr2k",
+      "Integrity": "I9Z5lgYl9leHaS106H4yTlMEt/kj40AyJXXTMP5RBFA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6f0293ad-e5aa-44d2-9227-75071ad08b87.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\93f67b29-cba9-4156-905c-cd94d94549b3.png",
+      "SourceId": "TreeForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\",
+      "BasePath": "_content/TreeForum",
+      "RelativePath": "images/93f67b29-cba9-4156-905c-cd94d94549b3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8avk8teqxe",
+      "Integrity": "oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\93f67b29-cba9-4156-905c-cd94d94549b3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\9fa7f887-dada-4f23-9b21-64a90852eab8.jpg",
+      "SourceId": "TreeForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\",
+      "BasePath": "_content/TreeForum",
+      "RelativePath": "images/9fa7f887-dada-4f23-9b21-64a90852eab8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0cm4eaopws",
+      "Integrity": "EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9fa7f887-dada-4f23-9b21-64a90852eab8.jpg"
     },
     {
       "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\a1ca2311-99c0-4543-848d-fecbe8a6ef73.jpg",
@@ -4173,6 +4299,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\b834be97-fc21-4bf0-b251-f0174a524428.png"
+    },
+    {
+      "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\default.jpg",
+      "SourceId": "TreeForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\",
+      "BasePath": "_content/TreeForum",
+      "RelativePath": "images/default#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0cm4eaopws",
+      "Integrity": "EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default.jpg"
     },
     {
       "Identity": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\default_tree.jpg",
@@ -14928,6 +15075,252 @@
       ]
     },
     {
+      "Route": "images/216f7f6c-f90e-43e7-95f1-8e7dabe362a1.0cm4eaopws.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\216f7f6c-f90e-43e7-95f1-8e7dabe362a1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:03:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0cm4eaopws"
+        },
+        {
+          "Name": "label",
+          "Value": "images/216f7f6c-f90e-43e7-95f1-8e7dabe362a1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk="
+        }
+      ]
+    },
+    {
+      "Route": "images/216f7f6c-f90e-43e7-95f1-8e7dabe362a1.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\216f7f6c-f90e-43e7-95f1-8e7dabe362a1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:03:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk="
+        }
+      ]
+    },
+    {
+      "Route": "images/24a380b5-1886-48c6-ab1b-4afa12cf78aa.8avk8teqxe.png",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\24a380b5-1886-48c6-ab1b-4afa12cf78aa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8715"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:05:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8avk8teqxe"
+        },
+        {
+          "Name": "label",
+          "Value": "images/24a380b5-1886-48c6-ab1b-4afa12cf78aa.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8="
+        }
+      ]
+    },
+    {
+      "Route": "images/24a380b5-1886-48c6-ab1b-4afa12cf78aa.png",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\24a380b5-1886-48c6-ab1b-4afa12cf78aa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8715"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:05:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8="
+        }
+      ]
+    },
+    {
+      "Route": "images/3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "251774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z5GI6SX3RZ093+8/2qGDLdTxya9yesX6j0oYiglwXxU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:04:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z5GI6SX3RZ093+8/2qGDLdTxya9yesX6j0oYiglwXxU="
+        }
+      ]
+    },
+    {
+      "Route": "images/3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b.rf7f6apcee.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "251774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z5GI6SX3RZ093+8/2qGDLdTxya9yesX6j0oYiglwXxU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:04:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rf7f6apcee"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z5GI6SX3RZ093+8/2qGDLdTxya9yesX6j0oYiglwXxU="
+        }
+      ]
+    },
+    {
       "Route": "images/3c30d542-9a5e-4aa9-af40-df6faaad82d4.0cm4eaopws.jpg",
       "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\3c30d542-9a5e-4aa9-af40-df6faaad82d4.jpg",
       "Selectors": [],
@@ -14996,6 +15389,252 @@
         {
           "Name": "Last-Modified",
           "Value": "Fri, 07 Feb 2025 23:33:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk="
+        }
+      ]
+    },
+    {
+      "Route": "images/6f0293ad-e5aa-44d2-9227-75071ad08b87.h79ty5wr2k.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\6f0293ad-e5aa-44d2-9227-75071ad08b87.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I9Z5lgYl9leHaS106H4yTlMEt/kj40AyJXXTMP5RBFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:07:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h79ty5wr2k"
+        },
+        {
+          "Name": "label",
+          "Value": "images/6f0293ad-e5aa-44d2-9227-75071ad08b87.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I9Z5lgYl9leHaS106H4yTlMEt/kj40AyJXXTMP5RBFA="
+        }
+      ]
+    },
+    {
+      "Route": "images/6f0293ad-e5aa-44d2-9227-75071ad08b87.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\6f0293ad-e5aa-44d2-9227-75071ad08b87.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I9Z5lgYl9leHaS106H4yTlMEt/kj40AyJXXTMP5RBFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:07:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I9Z5lgYl9leHaS106H4yTlMEt/kj40AyJXXTMP5RBFA="
+        }
+      ]
+    },
+    {
+      "Route": "images/93f67b29-cba9-4156-905c-cd94d94549b3.8avk8teqxe.png",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\93f67b29-cba9-4156-905c-cd94d94549b3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8715"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:00:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8avk8teqxe"
+        },
+        {
+          "Name": "label",
+          "Value": "images/93f67b29-cba9-4156-905c-cd94d94549b3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8="
+        }
+      ]
+    },
+    {
+      "Route": "images/93f67b29-cba9-4156-905c-cd94d94549b3.png",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\93f67b29-cba9-4156-905c-cd94d94549b3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8715"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 22:00:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8="
+        }
+      ]
+    },
+    {
+      "Route": "images/9fa7f887-dada-4f23-9b21-64a90852eab8.0cm4eaopws.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\9fa7f887-dada-4f23-9b21-64a90852eab8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 21:58:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0cm4eaopws"
+        },
+        {
+          "Name": "label",
+          "Value": "images/9fa7f887-dada-4f23-9b21-64a90852eab8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk="
+        }
+      ]
+    },
+    {
+      "Route": "images/9fa7f887-dada-4f23-9b21-64a90852eab8.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\9fa7f887-dada-4f23-9b21-64a90852eab8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 21:58:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15170,6 +15809,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8="
+        }
+      ]
+    },
+    {
+      "Route": "images/default.0cm4eaopws.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\default.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 21:55:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0cm4eaopws"
+        },
+        {
+          "Name": "label",
+          "Value": "images/default.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk="
+        }
+      ]
+    },
+    {
+      "Route": "images/default.jpg",
+      "AssetFile": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\default.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 21:55:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk="
         }
       ]
     },
