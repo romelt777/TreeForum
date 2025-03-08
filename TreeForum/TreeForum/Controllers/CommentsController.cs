@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,8 @@ using TreeForum.Models;
 
 namespace TreeForum.Controllers
 {
+    [Authorize]
+
     public class CommentsController : Controller
     {
         private readonly TreeForumContext _context;

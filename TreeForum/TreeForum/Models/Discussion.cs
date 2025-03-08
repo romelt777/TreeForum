@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TreeForum.Data;
 
 namespace TreeForum.Models
 {
@@ -17,5 +18,11 @@ namespace TreeForum.Models
 
         // Navigation property
         public List<Comment>? Comments { get; set; }  // nullable!!!
+
+        //application User (foreign key), aspnetusers table
+        public string ApplicationUserId { get; set; } = string.Empty;
+
+        //navigation property
+        public ApplicationUser? ApplicationUser { get; set; } //nullable
     }
 }
