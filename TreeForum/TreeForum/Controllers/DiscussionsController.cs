@@ -144,7 +144,9 @@ namespace TreeForum.Controllers
                 discussion.ImageFilename = "default.jpg";
             }
 
-            Console.WriteLine(ModelState);
+            //set the user id to the logged in user
+            var userId = _userManager.GetUserId(User);
+            discussion.ApplicationUserId = userId;
 
             if (ModelState.IsValid)
             {
