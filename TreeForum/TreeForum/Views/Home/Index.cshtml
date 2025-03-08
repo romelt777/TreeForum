@@ -36,7 +36,7 @@
                                         <h1 class="card-title mb-0 mt-5">@item.Title</h1>
                                     </div>
                                     <div class="col-4">
-                                        @if (!string.IsNullOrEmpty(item.ImageFilename))
+                                        @if (item.ImageFilename != "default.jpg")
                                         {
                                             string imageUrl = Url.Content("/images/" + item.ImageFilename);
                                             <img src="@imageUrl" class="img-fluid thumbnail pt-3 pb-1" alt="@item.Title" />

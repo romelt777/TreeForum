@@ -14,7 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="DiscussionId" />
             <input type="hidden" asp-for="CreateDate" class="form-control" />
-            <input type="hidden" asp-for="ImageFilename" class="form-control" />
+            <input type="hidden" asp-for="ImageFilename" class="form-control" value="@Model.ImageFilename" />
             @* <input type="hidden" asp-for="ImageFile" class="form-control" /> *@
 
             <div class="mb-3">

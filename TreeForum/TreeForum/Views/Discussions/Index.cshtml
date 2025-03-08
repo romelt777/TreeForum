@@ -38,7 +38,7 @@
         @foreach (var item in Model) {
             <tr>
                 <td>
-                    @if (!string.IsNullOrEmpty(item.ImageFilename))
+                    @if (item.ImageFilename != "default.jpg")
                     {
                         string imageUrl= Url.Content("/images/" + item.ImageFilename);
                         <img src="@imageUrl" class="img-fluid thumbnail" alt="@item.Title" />
