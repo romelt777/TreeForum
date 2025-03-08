@@ -40,7 +40,7 @@ namespace TreeForum.Controllers
             }
 
             //getting the discussion and associated comments
-            var discussion = await _context.Discussion.Include("Comments").FirstOrDefaultAsync(m => m.DiscussionId == id);
+            var discussion = await _context.Discussion.Include("Comments").Include("ApplicationUser").FirstOrDefaultAsync(m => m.DiscussionId == id);
 
 
             if (discussion == null)

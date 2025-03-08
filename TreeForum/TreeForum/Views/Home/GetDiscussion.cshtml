@@ -18,8 +18,13 @@
     <div class="card">
         <div class="card-body">
             <h1 class="card-title mb-4">@Model.Title</h1>
-            <p class="card-text text-muted">Posted on: <span>@Model.CreateDate</span></p>
-            <div class="discussion-content mb-4">
+
+            <div class="mb-3">
+                <span class="card-text text-muted">Posted By: <span>@Model.ApplicationUser.Name</span></span>
+                <span class="card-text text-muted ms-3">Posted On: <span>@Model.CreateDate</span></span>
+            </div>
+
+            <div class="discussion-content mb-4 border p-3">
                 <p>@Model.Content</p>
             </div>
             <div class="discussion-image mb-4">
