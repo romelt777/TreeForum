@@ -48,7 +48,16 @@ else{
                             <div class="container">
                                 <div class="row">
                                     <div class="col-4">
-                                        <img src="~/images/default_user.jpg" class="img-fluid thumbnail_user pt-3 pb-1 ms-3" alt="@item.Title" />
+                                        @if (item.ApplicationUser.ImageFilename == null || item.ApplicationUser.ImageFilename == "")
+                                        {
+                                            <img src="~/images/default_user.jpg" class="img-fluid thumbnail_user pt-3 pb-1 ms-3" alt="@item.Title" />
+                                        }
+                                        else
+                                        {
+                                            string imageUrl = Url.Content("/profile_img/" + item.ApplicationUser.ImageFilename);
+                                            <img src="@imageUrl" class="img-fluid thumbnail_user pt-3 pb-1 ms-3" alt="@imageUrl" />
+
+                                        }
 
                                     </div>
                                     <div class="col-4">
