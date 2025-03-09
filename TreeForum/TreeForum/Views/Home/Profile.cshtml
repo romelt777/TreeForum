@@ -4,20 +4,20 @@
 
 }
 
-<h1 class="fw-bold mt-5 text-center">@Model.Name 's Profile</h1>
+<h1 class="fw-bold mt-5 text-center">@ViewBag.profileUser.Name 's Profile</h1>
 
 <div class="container mt-4">
     <div class="row">
         <!-- Profile Image Section -->
         <div class="col-md-4 text-center">
-            @if (Model.ImageFilename == null || Model.ImageFilename == "")
+            @if (ViewBag.profileUser.ImageFilename == null || ViewBag.profileUser.ImageFilename == "")
             {
                 <img src="~/images/default_user.jpg" class="img-fluid rounded-circle thumbnail_user" />
                 
             }
             else
             {
-                <img src="~/profile_img/@Model.ImageFilename" class="img-fluid rounded-circle thumbnail_user" />
+                <img src="~/profile_img/@ViewBag.profileUser.ImageFilename" class="img-fluid rounded-circle thumbnail_user" />
 
             }
         </div>
@@ -25,20 +25,22 @@
         <!-- User Info Section -->
         <div class="col-md-8">
             <h3 class="mt-3">Profile Information</h3>
-            <p><strong>Location:</strong> @(!string.IsNullOrEmpty(Model.Location) ? Model.Location : "Not provided")</p>
+            <p><strong>Location:</strong> @(!string.IsNullOrEmpty(ViewBag.profileUser.Location) ? ViewBag.profileUser.Location : "Not provided")</p>
 
-            <p><strong>Email:</strong> @Model.Email</p>
+            <p><strong>Email:</strong> @ViewBag.profileUser.Email</p>
 
         </div>
     </div>
 
+    <h1 class="fw-bold mt-5 text-center">@ViewBag.profileUser.Name 's Posts</h1>
+
     @* <!-- User's Posts or Discussions Section --> *@
     @* <div class="mt-5"> *@
     @*     <h3 class="text-center">User's Posts</h3> *@
-    @*     @if (Model.Discussions != null && Model.Discussions.Count > 0) *@
+    @*     @if (ViewBag.profileUser.Discussions != null && ViewBag.profileUser.Discussions.Count > 0) *@
     @*     { *@
     @*         <ul class="list-group"> *@
-    @*             @foreach (var discussion in Model.Discussions) *@
+    @*             @foreach (var discussion in ViewBag.profileUser.Discussions) *@
     @*             { *@
     @*                 <li class="list-group-item"> *@
     @*                     <a href="@Url.Action("GetDiscussion", "Home", new { id = discussion.DiscussionId })"> *@

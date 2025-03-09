@@ -147,14 +147,23 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
-            var profileUser = await _context.Users.FirstOrDefaultAsync(u => u.Name == name);
+            //getting user by name(handle)
+            var userProfile = await _context.Users.FirstOrDefaultAsync(u => u.Name == name);
 
-            if (profileUser == null)
+            if (userProfile == null)
             {
                 return NotFound();
             }
 
-            return View(profileUser);
+            //getting the user discussions
+            var userDiscussions = await _context.Discussion
+                .Where(d => d.ApplicationUserId == userProfile.Id)
+                .ToListAsync();
+
+            ViewData["ProfileUser"] = userProfile;
+            ViewData["UserDiscussions"] = userDiscussions;
+
+            return View();
 
         }
     }
