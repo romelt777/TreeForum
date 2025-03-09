@@ -43,10 +43,11 @@ else{
             @foreach (var item in Model)
             {
                 <li key="@item.DiscussionId" class="mb-4">
-                    <a class="text-decoration-none"  href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })">
                         <div class="card shadow-sm w-100 card_home">
                             <div class="container">
                                 <div class="row">
+
+                                    @* user image *@
                                     <div class="col-4">
                                         @if (item.ApplicationUser.ImageFilename == null || item.ApplicationUser.ImageFilename == "")
                                         {
@@ -60,9 +61,15 @@ else{
                                         }
 
                                     </div>
+
+                                    @* discussion title *@
                                     <div class="col-4">
-                                        <h1 class="card-title mb-0 mt-5">@item.Title</h1>
+                                    <a class="text-decoration-none" href="@Url.Action("GetDiscussion", "Home", new { id = item.DiscussionId })" style="color: inherit;">
+                                            <h1 class="card-title mb-0 mt-5">@item.Title</h1>
+                                        </a>
                                     </div>
+
+                                @* discussion image thumbnail *@
                                     <div class="col-4">
                                         @if(item.ImageFilename != null){
                                             @if (item.ImageFilename != "default.jpg")
@@ -79,8 +86,11 @@ else{
                                     </div>
                                 </div>
                                 <div class="row">
+                                    @* profile name  *@
                                     <div class="col-4">
-                                        <p>@item.ApplicationUser.Name</p>
+                                    <a class="text-decoration-none" href="@Url.Action("Profile", "Home", new { id = item.ApplicationUser.Name })" style="color: inherit;">
+                                            <p class=" profile-title ">@item.ApplicationUser.Name</p>
+                                        </a>
                                     </div>
                                     <div class="col-4">
                                         <p class="d-flex align-items-center">
@@ -104,7 +114,6 @@ else{
                                 </div>
                             </div>
                         </div>
-                    </a>
                 </li>
             }
         </ul>

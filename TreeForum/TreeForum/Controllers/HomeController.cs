@@ -147,7 +147,7 @@ namespace TreeForum.Controllers
                 return NotFound();
             }
 
-            var profileUser = _userManager.FindByIdAsync(id.ToString()).Result;
+            var profileUser = _userManager.FindByIdAsync(id.ToString());
 
 
 
@@ -177,7 +177,7 @@ namespace TreeForum.Controllers
 
             //return View(discussion);
 
-            return View();
+            return View(profileUser);
 
         }
     }

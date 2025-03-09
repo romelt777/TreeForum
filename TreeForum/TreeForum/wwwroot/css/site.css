@@ -91,6 +91,9 @@ body {
     text-decoration: underline;
 }
 
+.profile-title:hover {
+    text-decoration: underline;
+}
 
 .card_home {
     border: 1px solid #006400;
