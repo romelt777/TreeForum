@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
 
 namespace TreeForum.Data
 {
@@ -10,6 +12,10 @@ namespace TreeForum.Data
         [PersonalData]
         public string Location { get; set; } = string.Empty;
 
+        public string ImageFilename { get; set; } = string.Empty;
 
+        [NotMapped]
+        [Display(Name = "Profile Picture")]
+        public IFormFile? ImageFile { get; set; }
     }
 }
