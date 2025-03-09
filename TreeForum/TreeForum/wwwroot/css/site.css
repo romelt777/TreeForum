@@ -5,6 +5,20 @@
     border-radius: 8px;
 }
 
+.table-responsive {
+    overflow-x: auto;
+}
+.table {
+    table-layout: auto;
+    width: 100%;
+    word-wrap: break-word;
+}
+.scrollable-content {
+    max-height: 100px; 
+    overflow-y: auto; 
+    text-overflow: ellipsis; 
+    padding: 5px;
+}
 
 .profile-thumb {
     width: 55px;
@@ -177,4 +191,28 @@ body {
     .discussion-content {
         font-size: 1rem;
     }
+}
+
+@media (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+        .table td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 }
