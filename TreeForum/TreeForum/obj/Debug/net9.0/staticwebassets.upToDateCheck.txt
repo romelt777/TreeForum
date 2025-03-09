@@ -79,6 +79,7 @@ wwwroot\images\default.jpg
 wwwroot\images\default_tree.jpg
 wwwroot\images\default_user.jpg
 wwwroot\images\e842f62a-0b0a-4925-9309-799f66dc5b79.jpg
+wwwroot\images\fad6e071-7a16-4f07-bf3e-7ebc81bc20a1.png
 wwwroot\images\no_image_found.png
 wwwroot\images\tree_background.jpg
 wwwroot\js\site.js
@@ -142,3 +143,4 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\profile_img\38db2a23-0de0-495e-b549-0980b7a63053.png
