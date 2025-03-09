@@ -21,7 +21,9 @@
                         </div>
                     }
                 </span>
-                <span class="card-text text-muted"><span>@Model.ApplicationUser.Name</span></span>
+                <a class="text-decoration-none" href="@Url.Action("Profile", "Home", new { name = @Model.ApplicationUser.Name })" style="color: inherit;">
+                    <span class="profile-public">@Model.ApplicationUser.Name</span>
+                </a>
                 <span class="card-text text-muted ms-3">Posted On: <span>@Model.CreateDate</span></span>
 
             </div>
@@ -65,7 +67,11 @@
                         <p class="d-flex justify-content-between">
                             @if (comment.ApplicationUser != null)
                             {
-                                <strong>@comment.ApplicationUser.Name</strong>
+                                <strong>
+                                    <a class="text-decoration-none" href="@Url.Action("Profile", "Home", new { name = @comment.ApplicationUser.Name })" style="color: inherit;">
+                                        <span class="profile-public">@comment.ApplicationUser.Name</span>
+                                    </a>
+                                </strong>
                             }
                             <span>Comment Date: @comment.CreateDate</span>
                         </p>
