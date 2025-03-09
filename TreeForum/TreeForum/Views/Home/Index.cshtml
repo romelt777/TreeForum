@@ -88,7 +88,7 @@ else{
                                 <div class="row">
                                     @* profile name  *@
                                     <div class="col-4">
-                                    <a class="text-decoration-none" href="@Url.Action("Profile", "Home", new { id = item.ApplicationUser.Name })" style="color: inherit;">
+                                    <a class="text-decoration-none" href="@Url.Action("Profile", "Home", new { name = item.ApplicationUser.Name })" style="color: inherit;">
                                             <p class=" profile-title ">@item.ApplicationUser.Name</p>
                                         </a>
                                     </div>
