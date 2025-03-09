@@ -193,7 +193,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .table thead {
         display: none;
     }
