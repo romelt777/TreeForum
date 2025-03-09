@@ -34,25 +34,23 @@
 
     <h1 class="fw-bold mt-5 text-center">@ViewBag.profileUser.Name 's Posts</h1>
 
-    @* <!-- User's Posts or Discussions Section --> *@
-    @* <div class="mt-5"> *@
-    @*     <h3 class="text-center">User's Posts</h3> *@
-    @*     @if (ViewBag.profileUser.Discussions != null && ViewBag.profileUser.Discussions.Count > 0) *@
-    @*     { *@
-    @*         <ul class="list-group"> *@
-    @*             @foreach (var discussion in ViewBag.profileUser.Discussions) *@
-    @*             { *@
-    @*                 <li class="list-group-item"> *@
-    @*                     <a href="@Url.Action("GetDiscussion", "Home", new { id = discussion.DiscussionId })"> *@
-    @*                         @discussion.Title *@
-    @*                     </a> *@
-    @*                 </li> *@
-    @*             } *@
-    @*         </ul> *@
-    @*     } *@
-    @*     else *@
-    @*     { *@
-    @*         <p class="text-center">No posts yet!</p> *@
-    @*     } *@
+     @* User'sDiscussions   *@
+    <div class="mt-5">
+        <h3 class="text-center">User's Posts</h3>
+        @if (ViewBag.UserDiscussions != null && ViewBag.UserDiscussions.Count > 0)
+        {
+            <ul class="list-group">
+                @foreach (var discussion in ViewBag.UserDiscussions)
+                {
+                    <li class="list-group-item">
+                        Hello
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="text-center">No posts yet!</p>
+        }
     </div>
 </div>
