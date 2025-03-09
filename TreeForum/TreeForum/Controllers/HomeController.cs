@@ -138,5 +138,47 @@ namespace TreeForum.Controllers
             return View(discussion);
 
         }
+
+        //Profile : gets 1 discussion and all comments with discussion
+        public async Task<IActionResult> Profile(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var profileUser = _userManager.FindByIdAsync(id.ToString()).Result;
+
+
+
+            //var profile = await _context.Users
+            //    .FirstOrDefaultAsync(m => m.Id == profileUser.Id);
+
+            ////getting the application User
+            //var user = await _context.Users
+            //    .FirstOrDefaultAsync(m => m.Id == id);
+
+
+            //if (discussion == null)
+            //{
+            //    return NotFound();
+            //}
+
+            ////loading the comments with their associated ApplicationUser
+            //await _context.Entry(discussion)
+            //    .Collection(d => d.Comments)
+            //    .Query()
+            //    .Include(c => c.ApplicationUser) //load the applicationUser for each comment
+            //    .LoadAsync();
+
+            ////initialize comments (avoid null reference)
+            //discussion.Comments = discussion.Comments ?? new List<Comment>();
+            //discussion.Comments = discussion.Comments.OrderBy(c => c.CreateDate).ToList();
+
+            //return View(discussion);
+
+            return View();
+
+        }
     }
 }
