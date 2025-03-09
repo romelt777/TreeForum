@@ -12,13 +12,12 @@
         <div class="col-md-4 text-center">
             @if (ViewBag.profileUser.ImageFilename == null || ViewBag.profileUser.ImageFilename == "")
             {
-                <img src="~/images/default_user.jpg" class="img-fluid rounded-circle thumbnail_user" />
+                <img src="~/images/default_user.jpg" class="profile-image" />
                 
             }
             else
             {
-                <img src="~/profile_img/@ViewBag.profileUser.ImageFilename" class="img-fluid rounded-circle thumbnail_user" />
-
+                <img src="~/profile_img/@ViewBag.profileUser.ImageFilename" class="profile-image" />
             }
         </div>
 
@@ -32,7 +31,7 @@
         </div>
     </div>
 
-    <h1 class="fw-bold mt-5 text-center">@ViewBag.profileUser.Name 's Posts</h1>
+    <h1 class="fw-bold mt-5 text-center">@ViewBag.profileUser.Name 's Posts (@ViewBag.UserDiscussions.Count)</h1>
 
      @* User'sDiscussions   *@
     <div class="mt-5">

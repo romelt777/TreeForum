@@ -28,6 +28,13 @@
     border-radius: 50%;
 }
 
+.profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .nav-link:hover {
     background-color: #f8f9fa; 
     border-radius: 5px; 
@@ -92,6 +99,10 @@ body {
 }
 
 .profile-title:hover {
+    text-decoration: underline;
+}
+
+.profile-public:hover {
     text-decoration: underline;
 }
 

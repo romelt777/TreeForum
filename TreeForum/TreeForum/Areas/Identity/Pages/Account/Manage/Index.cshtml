@@ -5,7 +5,14 @@
     ViewData["ActivePage"] = ManageNavPages.Index;
 }
 
-<h3>@ViewData["Title"]</h3>
+<h3>
+    @ViewData["Title"] 
+</h3>
+<h4>
+    <a class="text-decoration-none" href="@Url.Action("Profile", "Home", new { name = Model.Input.Name })" style="color: inherit;">
+        <span class="profile-public">Visit Public Profile</span>
+    </a>
+</h4>
 <partial name="_StatusMessage" for="StatusMessage" />
 <div class="row">
     <div class="col-md-6">

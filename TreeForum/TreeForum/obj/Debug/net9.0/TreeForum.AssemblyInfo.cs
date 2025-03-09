@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TreeForum")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58275280469d22957499f8ae74ef0b2718e0b4f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54ce54702c67b9bb9648855dd330c6f6e8bba5d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TreeForum")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TreeForum")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
