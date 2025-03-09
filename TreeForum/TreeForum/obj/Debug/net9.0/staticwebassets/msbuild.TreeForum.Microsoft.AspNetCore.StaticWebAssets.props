@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3s2h06u17l</Fingerprint>
-      <Integrity>UyDpfcVeMJpmqV6UUFSRZENe7OnKBBSnyzUoAqbXyz8=</Integrity>
+      <Fingerprint>8wl7dqilwv</Fingerprint>
+      <Integrity>mJ+9d8NfgjYo5iuPJ45cIqZ0dXz7wljXG/5XyEv/cJI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -179,6 +179,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\6f0293ad-e5aa-44d2-9227-75071ad08b87.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\71858c45-e167-48d4-9288-2fee0a14f0bd.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TreeForum</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TreeForum</BasePath>
+      <RelativePath>images/71858c45-e167-48d4-9288-2fee0a14f0bd.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8avk8teqxe</Fingerprint>
+      <Integrity>oCjRJl3IBbKKW/mrFqTW+1hb39h+PdZEfAVWaBKPvy8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\71858c45-e167-48d4-9288-2fee0a14f0bd.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\93f67b29-cba9-4156-905c-cd94d94549b3.png'))">
       <SourceType>Package</SourceType>

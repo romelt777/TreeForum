@@ -5,6 +5,13 @@
     border-radius: 8px;
 }
 
+
+.profile-thumb {
+    width: 55px;
+    height: auto;
+    border-radius: 50%;
+}
+
 .thumbnail_user {
     width: 75px;
     height: 100px;

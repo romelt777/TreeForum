@@ -70,6 +70,7 @@ wwwroot\images\3afd9f6c-7b8a-4fbd-a7fd-729e15879d0b.jpg
 wwwroot\images\3c30d542-9a5e-4aa9-af40-df6faaad82d4.jpg
 wwwroot\images\5decd4f5-ce2e-40f7-b09e-0ddaabc22382.jpg
 wwwroot\images\6f0293ad-e5aa-44d2-9227-75071ad08b87.jpg
+wwwroot\images\71858c45-e167-48d4-9288-2fee0a14f0bd.png
 wwwroot\images\93f67b29-cba9-4156-905c-cd94d94549b3.png
 wwwroot\images\9fa7f887-dada-4f23-9b21-64a90852eab8.jpg
 wwwroot\images\a1ca2311-99c0-4543-848d-fecbe8a6ef73.jpg
