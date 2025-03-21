@@ -34,28 +34,21 @@ Web Forum using C# .NET, Identity, SQL database, Razor pages.
 
 - MyThreads: displays all threads by the user, not accessible anyone except user. 
   
-![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/user_threads.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/user_threads2.png)
 
-- Admin Restriction: user cant access admin page without login, redirects to login.
+- Edit Discussion: user is able to edit their discussion.
 
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/admin_verification.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/edit_discussion.png)
 
-- New Item Page
+- Delete Discussion: user is able to delete their discussion.
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/new_item.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/delete_discussion.png)
 
-- New Item Verification: item must be entered with all information.
+- User Management: User is able to edit their own information
 
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/create_verification.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/user_manage.png)
 
-- Edit Item Page
+- User Management: user is able to change their display picture.
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/edit_item.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/changed_photo.png)
 
-- Delete Item: deletes item from page, and Azure database. 
-  
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/delete_item.png)
-
-- Admin Navigation Bar: products page (admin page) is available, user logout.
-  
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/after_admin_login.png)
