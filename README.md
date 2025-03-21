@@ -8,33 +8,33 @@ Web Forum using C# .NET, Identity, SQL database, Razor pages.
   
 ![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/home_page_no_user.png)
 
-- Item Detail Page: displays information about item, able to add to cart.
+- Discussion: displays thread, author, date, photo, and comments.
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/item_detail.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/discussion.png)
 
-- Navigation Bar: contains cart which updates quantity. 
+- Discussion:Comments: Shows all comments for discussion, username is clickable to go to profile page. 
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/dynamic_cart.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/comments_on_post.png)
 
-- Shopping Cart Page: displays price, quantity, calculates total price.
+- User Profile: displays info about user and all posts made. 
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/shopping_cart.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/user_profile.png)
 
-- Checkout Page: checkout form for customer information
+- Log In: To make post or comments user must log in.
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/checkout_page.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/log_in.png)
 
-- Checkout Verication: credit card number must be proper format.
+- Register: 
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/checkout_verification.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/register.png)
 
-- Admin Login Page
+- Home Page, User logged In: User is able to view their threads in navbar, logout available.
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/admin_login.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/home_page_user_logged_in.png)
 
-- Admin Page: displays all items and actions.
+- MyThreads: displays all threads by the user, not accessible anyone except user. 
   
-![](https://github.com/romelt777/SportsGoodsStore/blob/main/SCREENSHOTS/admin_page.png)
+![](https://github.com/romelt777/TreeForum/blob/main/Screenshots/user_threads.png)
 
 - Admin Restriction: user cant access admin page without login, redirects to login.
 
