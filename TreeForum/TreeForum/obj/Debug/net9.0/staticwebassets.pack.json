@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\1221e2e1-46fc-465e-a88c-58c7d7324ef0.jpg",
+      "PackagePath": "staticwebassets\\images\\1221e2e1-46fc-465e-a88c-58c7d7324ef0.jpg"
+    },
+    {
       "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\images\\154bf10b-e1e3-4d81-be79-498d6388935c.jpg",
       "PackagePath": "staticwebassets\\images\\154bf10b-e1e3-4d81-be79-498d6388935c.jpg"
     },
@@ -345,12 +349,36 @@
       "PackagePath": "staticwebassets\\profile_img\\38db2a23-0de0-495e-b549-0980b7a63053.png"
     },
     {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\4985bd95-570f-4849-b3df-8d5ccc1750c8.png",
+      "PackagePath": "staticwebassets\\profile_img\\4985bd95-570f-4849-b3df-8d5ccc1750c8.png"
+    },
+    {
       "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\4c9cec61-9c14-431e-93fc-37f7f6e942a7.png",
       "PackagePath": "staticwebassets\\profile_img\\4c9cec61-9c14-431e-93fc-37f7f6e942a7.png"
     },
     {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\550ab17a-920c-42d3-8622-4f7296628813.png",
+      "PackagePath": "staticwebassets\\profile_img\\550ab17a-920c-42d3-8622-4f7296628813.png"
+    },
+    {
       "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\66b02bca-4b4a-4dcd-8634-c73d41b89334.jpg",
       "PackagePath": "staticwebassets\\profile_img\\66b02bca-4b4a-4dcd-8634-c73d41b89334.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\b43015c6-45bd-4671-9f49-30c6c4cc4feb.png",
+      "PackagePath": "staticwebassets\\profile_img\\b43015c6-45bd-4671-9f49-30c6c4cc4feb.png"
+    },
+    {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\c05ed945-fe2f-4af6-b477-b4b726e69a51.jpg",
+      "PackagePath": "staticwebassets\\profile_img\\c05ed945-fe2f-4af6-b477-b4b726e69a51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\cf7e07f5-3646-4e91-9d74-bbf2a93892ea.jpg",
+      "PackagePath": "staticwebassets\\profile_img\\cf7e07f5-3646-4e91-9d74-bbf2a93892ea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\eaa38466-700b-4b42-85e6-0d9e951fa258.png",
+      "PackagePath": "staticwebassets\\profile_img\\eaa38466-700b-4b42-85e6-0d9e951fa258.png"
     },
     {
       "Id": "C:\\Users\\Rom\\Documents\\NSCC\\WINTER2025\\INFT4000_ASPNET\\TreeForum\\TreeForum\\TreeForum\\wwwroot\\profile_img\\eaae9f3c-5855-4d35-b12f-d54a2dbf4c13.png",

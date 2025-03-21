@@ -36,6 +36,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1221e2e1-46fc-465e-a88c-58c7d7324ef0.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TreeForum</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TreeForum</BasePath>
+      <RelativePath>images/1221e2e1-46fc-465e-a88c-58c7d7324ef0.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0cm4eaopws</Fingerprint>
+      <Integrity>EEDiinA+EQBtmCWBmhLS7zqraxNcFwR3O0+peRiYHtk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1221e2e1-46fc-465e-a88c-58c7d7324ef0.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\154bf10b-e1e3-4d81-be79-498d6388935c.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TreeForum</SourceId>
@@ -1530,6 +1548,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\38db2a23-0de0-495e-b549-0980b7a63053.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\4985bd95-570f-4849-b3df-8d5ccc1750c8.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TreeForum</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TreeForum</BasePath>
+      <RelativePath>profile_img/4985bd95-570f-4849-b3df-8d5ccc1750c8.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>v45gkltvmb</Fingerprint>
+      <Integrity>AeoDpLb3ABKHy8tcYekVyvPFvYuVKoNzbZIcsqZjUMQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\4985bd95-570f-4849-b3df-8d5ccc1750c8.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\4c9cec61-9c14-431e-93fc-37f7f6e942a7.png'))">
       <SourceType>Package</SourceType>
       <SourceId>TreeForum</SourceId>
@@ -1548,6 +1584,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\4c9cec61-9c14-431e-93fc-37f7f6e942a7.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\550ab17a-920c-42d3-8622-4f7296628813.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TreeForum</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TreeForum</BasePath>
+      <RelativePath>profile_img/550ab17a-920c-42d3-8622-4f7296628813.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ttv8b1vd5o</Fingerprint>
+      <Integrity>IRJMbRKBIFAyeeP02quMJNtCNtaOlAjynKhjAX16Y/I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\550ab17a-920c-42d3-8622-4f7296628813.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\66b02bca-4b4a-4dcd-8634-c73d41b89334.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TreeForum</SourceId>
@@ -1565,6 +1619,78 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\66b02bca-4b4a-4dcd-8634-c73d41b89334.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\b43015c6-45bd-4671-9f49-30c6c4cc4feb.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TreeForum</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TreeForum</BasePath>
+      <RelativePath>profile_img/b43015c6-45bd-4671-9f49-30c6c4cc4feb.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ttv8b1vd5o</Fingerprint>
+      <Integrity>IRJMbRKBIFAyeeP02quMJNtCNtaOlAjynKhjAX16Y/I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\b43015c6-45bd-4671-9f49-30c6c4cc4feb.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\c05ed945-fe2f-4af6-b477-b4b726e69a51.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TreeForum</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TreeForum</BasePath>
+      <RelativePath>profile_img/c05ed945-fe2f-4af6-b477-b4b726e69a51.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qynf32mnyy</Fingerprint>
+      <Integrity>7o0VLzV5BUbFde/05VIrqoGgOb87l1FCdZwC1hJjVWI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\c05ed945-fe2f-4af6-b477-b4b726e69a51.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\cf7e07f5-3646-4e91-9d74-bbf2a93892ea.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TreeForum</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TreeForum</BasePath>
+      <RelativePath>profile_img/cf7e07f5-3646-4e91-9d74-bbf2a93892ea.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qynf32mnyy</Fingerprint>
+      <Integrity>7o0VLzV5BUbFde/05VIrqoGgOb87l1FCdZwC1hJjVWI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\cf7e07f5-3646-4e91-9d74-bbf2a93892ea.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\eaa38466-700b-4b42-85e6-0d9e951fa258.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TreeForum</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TreeForum</BasePath>
+      <RelativePath>profile_img/eaa38466-700b-4b42-85e6-0d9e951fa258.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>v45gkltvmb</Fingerprint>
+      <Integrity>AeoDpLb3ABKHy8tcYekVyvPFvYuVKoNzbZIcsqZjUMQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\eaa38466-700b-4b42-85e6-0d9e951fa258.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_img\eaae9f3c-5855-4d35-b12f-d54a2dbf4c13.png'))">
       <SourceType>Package</SourceType>
