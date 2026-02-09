@@ -14,7 +14,6 @@ Tree Forum is a full-stack web forum built with **ASP.NET Core and C#**, focused
 
 The application allows users to register, log in, create discussion threads, comment on posts, and manage their profiles. Authorization rules ensure users can only modify their own content, while unauthenticated users have read-only access.
 
-This project emphasizes **backend correctness and security**, rather than UI complexity.
 
 ---
 
@@ -68,14 +67,5 @@ This project emphasizes **backend correctness and security**, rather than UI com
 ### User Management
 ![User Profile](Screenshots/user_profile.png)
 ![Manage User](Screenshots/user_manage.png)
-
----
-
-## Why This Project Matters
-
-- Demonstrates secure backend development with ASP.NET Core  
-- Implements real-world authentication and authorization workflows  
-- Uses relational database modeling with Entity Framework  
-- Complements cloud-native projects by showcasing traditional backend architecture  
 
 ---
